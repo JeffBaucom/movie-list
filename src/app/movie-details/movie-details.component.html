@@ -1,0 +1,24 @@
+<div class="movie-details-container">
+  <!-- TODO Safe Check poster URL -->
+  <img
+    class="movie-details-poster"
+    [src]="getPosterURL()"
+    alt=""
+    (error)="handleMissingImage($event)"
+  />
+  <div class="movie-details-rating-container">
+    <h2 class="rating-value">{{ getRating() }}</h2>
+    <span class="rating-label">META</span>
+  </div>
+  <div class="movie-details-text-container">
+    <h1 class="movie-details-title">{{ movie.title }}</h1>
+    <span class="movie-details-year">Year: {{ movie.year }}</span>
+    <span class="movie-details-runtime">Run Time: {{ getRuntime() }}</span>
+    <p class="movie-details-flavor-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl est,
+      eleifend lacinia ullamcorper ac, sodales convallis ipsum. Cras malesuada
+      elit non tortor efficitur faucibus. Duis quis diam ac purus finibus ornare
+      et nec ex. 
+    </p>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+
+<div class="movies-top-bar">
+    <h2>In Theaters</h2>
+    <a class="movie-see-all-filter" href="/">SEE ALL</a>
+</div>
+<div *ngFor="let movie of movies">
+<app-movie-details [movie]="movie"></app-movie-details>
+
+</div>

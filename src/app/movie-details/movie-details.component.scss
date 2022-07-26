@@ -1,0 +1,55 @@
+.movie-details-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+
+.movie-details-rating-container {
+    margin-top: 1rem;
+    margin-left: clamp(1rem, 70px, 20%);
+}
+
+.movie-details-poster {
+    width: 145px;
+    height: 215px;
+}
+
+.rating-value {
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.rating-label {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.movie-details-text-container {
+    margin-top: 1rem;
+    margin-left: clamp(1rem, 36px, 15%);
+}
+
+.movie-details-title {
+    font-size: 24px;
+}
+
+.movie-details-year {
+    color: gray;
+}
+
+.movie-details-runtime::before {
+    color: gray;
+    margin-left: 1rem;
+    margin-right: .4rem;
+    content: "•";
+}
+.movie-details-runtime {
+    color: gray;
+}
+
+.movie-details-flavor-text {
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+}
